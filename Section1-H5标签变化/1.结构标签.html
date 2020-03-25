@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构标签</title>
+    <style>
+        footer {height:50px;font-size: 18px; font-weight:bold;color:#f00;text-align: center;background-color: aqua;line-height: 50px;}
+    </style>
+</head>
+<body>
+    <!-- 结构标签（块状元素）--有意义的DIV -->
+    <!-- <article>标记定义一篇文章 -->
+    <!-- <header>标记定义一个页面或一个区域的头部 -->
+    <!-- <nav>标记定义导航链接 -->
+    <!-- <section>标记定义一个区域 -->
+    <!-- <aside>标记定义页面内容部分的侧边栏/可与article配合使用 -->
+    <!-- <hgroup>标记定义文件中一个区块的相关信息 -->
+    <!-- <figure>标记定义一组媒体内容以及它们的标题 -->
+    <!-- <figcaption>标记定义figure元素的标题 -->
+    <!-- <footer>标记定义一个页面或者一个区域的底部 -->
+    <!-- <dialog>标记定义一个对话框(会话框)类似微信 -->
+    <!-- 补充1：header/section/aside/article/footer不要相互嵌套 -->
+    <!-- 补充2：header/section/footer级别最高 > aside/article/figure/hgroup/nav > div/figcaption -->
+    <header>
+        <div>Logo</div>
+        <nav>
+            <a href="1.html">首页</a>
+            <a href="1.html">介绍</a>
+            <a href="1.html">案例</a>
+            <a href="1.html">链接</a>
+            <a href="1.html">关于</a>
+        </nav>
+    </header>
+    <section>
+        <hgroup>
+            <h1>Article title</h1>
+            <h3>文/作者落款</h3>
+            <h4>description,descriptiondescription,description,description,description,description,description,description,description,description,description,description,description,description,description,description,description,description,</h4>
+        </hgroup>
+        <aside>
+            <a href="#sec1">section1</a>
+            <a href="#sec2">section2</a>
+            <a href="#sec3">section3</a>
+        </aside>
+        <article>
+            section1
+            我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，我是section1的内容，
+            section2
+            我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，我是section2的内容，
+            section3
+            我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，我是section3的内容，
+        </article>
+    </section>
+    <section>
+        <figure>
+            <figcaption>Article title</figcaption>
+            <div class="video">...</div>
+        </figure>
+    </section>
+    <section>
+        <dialog>
+            <dt>张三：嗯。。。不错</dt>
+            <dd>李四：不，不行。</dd>
+            <dt>张三：嗯。。。不错</dt>
+            <dd>李四：不，不行。</dd>
+            <dt>张三：嗯。。。不错</dt>
+            <dd>李四：不，不行。</dd>
+            <dt>张三：嗯。。。不错</dt>
+            <dd>李四：不，不行。</dd>
+            <dt>张三：嗯。。。不错</dt>
+            <dd>李四：不，不行。</dd>
+            <dt>张三：嗯。。。不错</dt>
+            <dd>李四：不，不行。</dd>
+        </dialog>
+        <dialog>
+            <dt>张2三：嗯。。。不错</dt>
+            <dd>李2四：不，不行。</dd>
+            <dt>张2三：嗯。。。不错</dt>
+            <dd>李2四：不，不行。</dd>
+            <dt>张2三：嗯。。。不错</dt>
+            <dd>李2四：不，不行。</dd>
+            <dt>张2三：嗯。。。不错</dt>
+            <dd>李2四：不，不行。</dd>
+            <dt>张2三：嗯。。。不错</dt>
+            <dd>李2四：不，不行。</dd>
+            <dt>张2三：嗯。。。不错</dt>
+            <dd>李2四：不，不行。</dd>
+        </dialog>
+        <dialog>
+            <dt>张3三：嗯。。。不错</dt>
+            <dd>李3四：不，不行。</dd>
+            <dt>张3三：嗯。。。不错</dt>
+            <dd>李3四：不，不行。</dd>
+            <dt>张3三：嗯。。。不错</dt>
+            <dd>李3四：不，不行。</dd>
+            <dt>张3三：嗯。。。不错</dt>
+            <dd>李3四：不，不行。</dd>
+            <dt>张3三：嗯。。。不错</dt>
+            <dd>李3四：不，不行。</dd>
+            <dt>张3三：嗯。。。不错</dt>
+            <dd>李3四：不，不行。</dd>
+        </dialog>
+    </section>
+    <footer>
+        Copyright....
+    </footer>
+</body>
+</html>

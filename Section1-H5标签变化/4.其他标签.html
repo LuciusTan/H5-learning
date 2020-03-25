@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他标签ruby/mark/output</title>
+</head>
+<body>
+    <!-- <ruby>标记定义注释或音标,rt标签用来注释 -->
+        <!-- 对不兼容的浏览器使用rp -->
+    <p><ruby>X<rp>(</rp><rt>cha</rt><rp>)</rp></ruby>这个字怎么读</p>
+
+<hr>
+    <!-- <mark> 标黄色突出显示-->
+    <p>我是一段文字。。。。。。。一段重要的<mark>文字</mark>、、、、、、</p>
+
+<hr>
+    
+    <!-- output -->
+    <!-- oninput可以实时监听文本框的输入变化 -->
+    <form oninput="totalPrice.value=parseInt(price.value)*parseInt(number.value)">
+    <!-- 0 <input type="range" id="price" value="5000">10000 range只能识别到100-->
+    <input type="text" id="price" value="5000">
+    * <input type="number" id="number" value="1"> = 
+    <output name="totalPrice" for="price number"></output>
+    </form>
+</body>
+</html>

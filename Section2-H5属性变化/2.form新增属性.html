@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form新增属性</title>
+</head>
+<body>
+    <!-- autocomplete属性-也可用在input上 autocomplete="on/off" 重新打开form时自动补全填过的字段-->
+    <p>autocomplete属性测试</p>
+    <form action="XXX.html" autocomplete="on">
+        输入1：不关闭autocomplete <input type="text" name="text" id=""><br>
+        输入2：关闭autocomplete <input type="email" name="email" id="" autocomplete="off"><br>
+        <input type="submit" value="submit">
+    </form>
+<hr>
+    <!-- autofocus属性 autofocus="autofocus" 页面加载完成后光标自动focus到form内的input上，适用所有input标签 -->
+    <p>autofocus属性测试</p>
+    <form action="XXX.html">
+        输入1：刷新之后光标会到我这里 <input type="text" name="text" id="" autofocus><br>
+        <input type="submit" value="submit">
+    </form>
+<hr>
+    <!-- multiple属性 multiple="multiple" 适用于email和file类型的input 选择多个文件上传/输入多个email地址-->
+    <p>multiple属性测试</p>
+    <form action="XXX.html">
+        输入1：可选择多个文件上传 <input type="file" name="file" id="" multiple><br>
+        输入2：可以输入多个邮件地址 <input type="email" name="email" id="" multiple="multiple"><br>
+        <input type="submit" value="submit">
+    </form>
+<hr>
+    <!-- placeholder属性 placeholder="XXXXXX" 提示文字 适用于text/search/url/tel/email/password -->
+    <p>placeholder属性测试</p>
+    <form action="XXX.html">
+        输入1：含有提示文字 <input type="text" name="text" id="" placeholder="我是提示文字"><br>
+        输入2：含有提示文字 <input type="email" name="email" id="" placeholder="我是提示文字"><br>
+        <input type="submit" value="submit">
+    </form>
+<hr>
+    <!-- require属性 required 提交时判定该区域是否为空，为空则无法提交 适用于 text/search/url/tel/email/password/date pickers/number/checkbox/radio/file -->
+    <!-- 不适用required：hidden 隐藏域 等-->
+    <p>require属性测试</p>
+    <form action="XXX.html">
+        输入1：不填我就无法提交 <input type="text" name="text" id="" required><br>
+        输入2： <input type="email" name="email" id=""><br>
+        <input type="submit" value="submit">
+    </form>
+<hr>
+</body>
+</html>

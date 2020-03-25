@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多媒体标签</title>
+</head>
+<body>
+    <!-- 意义:多媒体标签的出现意味着富媒体的发展以及支持不使用插件的情况下即可操作媒体文件,极大的提升了用户体验 -->
+    <!-- <video> 标记定义一个视频 -->
+    <!-- <audio> 标记定义音频 -->
+    <!-- <source> 标记定义媒体资源 -->
+
+<!-- <audio>标签/<source>标签 -->
+    <!-- step1 导入资源-->
+    <audio src="../Source/xxx.mp3"></audio>
+    <!-- step2 定义自动播放autoplay/循环模式loop/控制条controls -->
+    <audio src="../Source/xxx.mp3" autoplay="autoplay" loop="-1" controls="controls"></audio>
+    <!-- ps1 若浏览器不支持此标签 -->
+    <audio src="../Source/xxx.mp3" autoplay="autoplay" loop="-1" controls="controls">浏览器不支持</audio>
+    <!-- ps2 其他音频文件 type="audio/mpeg" -->
+    <audio autoplay="autoplay" loop="-1" controls="controls">
+        <source src="../Source/xxx.mp3" type="audio/mpeg"></source>
+    </audio>
+
+
+<!-- <video>标签/<source>标签 -->
+    <!-- step1 导入资源-->
+    <video src="../Source/xxx.mp4"></video>
+    <!-- step2 定义自动播放autoplay/循环模式loop/控制条controls -->
+    <audio src="../Source/xxx.mp4" autoplay="autoplay" loop="-1" controls="controls"></audio>
+    <!-- ps1 若浏览器不支持此标签 -->
+    <audio src="../Source/xxx.mp4" autoplay="autoplay" loop="-1" controls="controls">浏览器不支持</audio>
+    <!-- ps2 其他音频文件 type="video/mp4" -->
+    <video controls="controls" height="1024" width="768">
+        <source src="../Source/xxx.mp4" type="video/mp4"></source>
+    </video>
+
+
+
+</body>
+</html>

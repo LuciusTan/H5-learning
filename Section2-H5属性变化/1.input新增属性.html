@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input新增属性</title>
+</head>
+<body>
+    <!-- email属性 pc端无明显效果，手机端效果，调用键盘，验证@.-->
+    <p>email属性测试</p>
+    <input type="email" name="email">
+<hr>
+
+    <!-- url属性 pc端无明显效果，针对手机端，iPhone会出现不一样的键盘-->
+    <p>url属性测试</p>
+    <input type="url" name="url">
+<hr>
+
+    <!-- tel属性 pc端无明显效果，手机端效果，调用拨号键盘-->
+    <p>tel属性测试</p>
+    <input type="tel" name="tel">
+<hr>
+
+    <!-- number属性 pc端有点击加减数字，无法输入非数字，主要手机端键盘效果。只能输入数字-->
+    <p>number属性测试</p>
+    <input type="number" name="number">
+<hr>
+<hr>
+<hr>
+
+    <!-- Date Pickers 多用于手机端 -->
+    <p>date属性测试</p>
+    <!-- 手机端调用拨动年月日的键盘 -->
+    <input type="date" name="date">
+    <p>month属性测试</p>
+    <!-- 手机端调用拨动年月的键盘 -->
+    <input type="month" name="month">
+    <p>week属性测试</p>
+    <!-- 手机端-iPhone不兼容（待确认）, 计算第多少周, 可能会被淘汰 -->
+    <input type="week" name="week">
+    <p>time属性测试</p>
+    <!-- 手机端-iPhone 12小时制分上下午，获取到分钟，安卓24小时制 -->
+    <input type="time" name="time">
+    <p>datetime属性测试</p>
+    <!-- pc端不兼容，手机端 ios10+ 安卓都已不兼容 -->
+    <input type="datetime" name="datetime">
+    <p>datetime-local属性测试</p>
+    <!-- 手机端 替代datetime -->
+    <input type="datetime-local" name="datetime-local">
+<hr>
+<hr>
+<hr>
+
+    <!-- range/search/color 类型-->
+    <!-- range类型 默认0 - 100%，可定义min/max -->
+    <p>range类型测试</p>
+    <input type="range" name="num" min="1" max="10">
+    <!-- search属性 -->
+    <p>search类型测试</p>
+    <input type="search" name="search">
+    <!-- color属性 调用取色器 -->
+    <p>color类型测试</p>
+    <input type="color" name="color">
+</body>
+</html>
