@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他标签属性</title>
+</head>
+<body>
+    <!-- sizes 根据不同的分辨率引用不同的sizes -->
+    <p>sizes属性</p>
+    <link rel="icon" href="xxx.gif" type="image/gif" sizes="16x16">
+<hr>
+
+    <!-- target <base>标签应写在head里面 控制页面内所有超链接都是_blank弹出方式 -->
+    <p>target属性 - base标签应写在head里面</p>
+    <!-- <base href="http://localhost/" target="_blank"> -->
+<hr>
+
+    <!-- 超链接 -->
+    <p>超链接属性</p>
+    <!-- 表示对设备进行优化，handheld对“手持”设备进行支持，tv对电视设备进行支持 -->
+    <p>a:media=""</p>
+
+    <!-- 目标页面语言，设置语言，这里设置语言是中文 -->
+    <p>a:hreflang="zh"</p>
+
+    <!-- 设置超链接的引用，这里超链接为外部链接 -->
+    <p>a:rel="enternal"</p>
+<hr>
+<hr>
+<hr>
+
+
+    <!-- script -->
+    <script type="text/javascript">
+        document.write("111");
+        document.write("222");
+    </script>
+    <script type="text/javascript" src="xxx.js">
+    // xxx.js的内容为：
+    // document.write("333");
+    </script>
+    <p>444</p>
+    <!-- 以上顺序为 111,222,333,444 若想改变执行顺序，则使用defer和async-->
+    <!-- defer：规定当页面已经完全加载完成后，才会执行脚本 -->
+    <script defer src="xxx.js"></script>
+    <!-- async：规定一旦脚本可用，则会异步执行 -->
+    <script async src="xxx.js"></script>
+<hr>
+<hr>
+<hr>
+
+    <!-- ol 有序列表 -->
+    <p>start/reversed</p>
+    <ol start="2" reversed>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+<hr>
+<hr>
+<hr>
+    <!-- html和style属性 -->
+    <p>html新增manifest</p>
+    <!-- manifest='cache.manifest' 定义页面离线文件 -->
+    <!-- <html manifest="index.manifest"></html> -->
+<hr>
+    <p>scoped:内嵌css</p>
+    <!-- 可以在任何位置写css代码-不建议 -->
+    <style scoped></style>
+</body> 
+</html>
